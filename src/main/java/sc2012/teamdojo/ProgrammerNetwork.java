@@ -19,4 +19,7 @@ public class ProgrammerNetwork {
 		programmerCount++;
 	}
 
+	public void connectProgrammers(int fromProgrammerNumber, int toProgrammerNumber) {
+		programmerConnections[fromProgrammerNumber][toProgrammerNumber] = new Edge(programmers[fromProgrammerNumber], programmers[toProgrammerNumber]);
+	}
 }
