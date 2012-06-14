@@ -4,4 +4,9 @@
 .settings/*
 target
 
-.idea/.name
+.idea/*
+team-dojo.iml
+
+.idea/compiler.xml
+
+.idea/copyright/profiles_settings.xml
