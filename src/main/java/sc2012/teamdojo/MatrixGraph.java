@@ -1,6 +1,6 @@
 package sc2012.teamdojo;
 
 public class MatrixGraph {
-	private Vertex[] vertices;
+	private Programmer[] vertices;
 	private Edge[][] edges;
 }
