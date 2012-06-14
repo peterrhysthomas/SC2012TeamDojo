@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Programmer {
+    private int id;
 	private String name;
     private List<String> skills = new ArrayList<String>();
     private List<String> recommends = new ArrayList<String>();
