@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Network" type="NetworkType"/>
+  <xs:complexType name="SkillsType">
+    <xs:sequence>
+      <xs:element name="Skill" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Ruby"/>
+            <xs:enumeration value="Perl"/>
+            <xs:enumeration value="PHP"/>
+            <xs:enumeration value="Java"/>
+            <xs:enumeration value="C#"/>
+            <xs:enumeration value="C++"/>
+            <xs:enumeration value="Python"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="NetworkType">
+    <xs:sequence>
+      <xs:element type="ProgrammerType" name="Programmer" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ProgrammerType">
+    <xs:sequence>
+      <xs:element type="RecommendationsType" name="Recommendations"/>
+      <xs:element type="SkillsType" name="Skills"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="RecommendationsType">
+    <xs:sequence>
+      <xs:element name="Recommendation" maxOccurs="unbounded" minOccurs="0">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Jason"/>
+            <xs:enumeration value="Jill"/>
+            <xs:enumeration value="Nick"/>
+            <xs:enumeration value="Stu"/>
+            <xs:enumeration value="Liz"/>
+            <xs:enumeration value="Rick"/>
+            <xs:enumeration value="Dave"/>
+            <xs:enumeration value="Bill"/>
+            <xs:enumeration value="Ed"/>
+            <xs:enumeration value="Frank"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

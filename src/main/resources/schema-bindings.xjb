@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jxb:bindings version="2.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+
+    <jxb:globalBindings fixedAttributeAsConstantProperty="false"
+            collectionType="java.util.ArrayList"
+            typesafeEnumMemberName="generateError"
+            enableFailFastCheck="false"
+            generateIsSetMethod="true"
+            underscoreBinding="asCharInWord" />
+
+    <jxb:bindings node="/xs:schema" schemaLocation="pro-net.xsd" >
+        <jxb:schemaBindings>
+            <jxb:package name="sc2012.teamdojo.schema"/>
+        </jxb:schemaBindings>
+    </jxb:bindings>
+    
+</jxb:bindings>
