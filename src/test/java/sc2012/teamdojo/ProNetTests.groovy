@@ -1,4 +1,4 @@
-:qpackage sc2012.teamdojo
+package sc2012.teamdojo
 
 import org.codehaus.groovy.tools.ast.TestHarnessClassLoader;
 import org.junit.Test;
