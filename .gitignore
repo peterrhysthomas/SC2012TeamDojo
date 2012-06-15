@@ -3,6 +3,8 @@
 .project
 .settings/*
 target
+.gradle
+build
 
 .idea/*
 team-dojo.iml
