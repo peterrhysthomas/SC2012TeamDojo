@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'maven'
+apply plugin: 'idea'
+
+group = 'sc2012'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    groovy "org.codehaus.groovy:groovy:$groovyVersion"
+    compile "org.slf4j:slf4j-api:$slf4jVersion"
+    testCompile "junit:junit:$junitVersion"
+    testCompile "info.cukes:cucumber-java:$cucumberVersion"
+    testCompile "info.cukes:cucumber-junit:$cucumberVersion"
+    testRuntime "org.slf4j:slf4j-log4j12:$slf4jVersion"
+    testRuntime "log4j:log4j:$log4jVersion"
+}
+
+version = 1.0
+
+jar {
+    manifest.attributes provider: 'gradle'
+}
+
